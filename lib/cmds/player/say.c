@@ -61,7 +61,7 @@ private void main(string str)
       break;
     default:
       msgs=this_body()->action(({this_body()}),
-          "%^SAY%^$N $vsay:%^RESET%^ $o",
+          "%^YELLOW%^$N $vsay: %^MAGENTA%^$o%^RESET%^",
           punctuate(str));
       this_body()->inform(({this_body()}),msgs,others);
 #ifndef SAY_HISTORY_IN_ROOMS

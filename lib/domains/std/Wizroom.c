@@ -19,13 +19,14 @@ void setup()
 	   "A low doorway in the east wall allows access to the example "
 	   "room, a glowing portal in the north wall leads to the mortal "
 	   "start area, and to the northeast is the quiet room, the door of "
-	   "which is currently $oak_door.  $lamp");
+	   "which is currently $oak_door.  $lamp\n\nВ воздухе висит надпись: Комната Пруля на севере\n\n");
   set_state_description( "oak_door_off", "closed");
   set_state_description( "oak_door_on", "open");
   set_state_description( "lamp_on", "The lamp beside the elevator is lit.");
   set_exits( ([
 	       "east" : "Example_Room1",
 	       "south" : "Monster_Room",
+	       "north" : "W1",
 	       "northwest" : "Lava_Room",
 	       ]) );
   set_objects( ([
